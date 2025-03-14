@@ -1,0 +1,102 @@
+﻿/* Комбинированный селектор - применяется ко всем элементам */
+header,footer,aside,body,.navbar,.video-container{
+    font-family: "Helvetica 65 Medium", sans-serif;
+}
+
+header,footer,body,.video-container{
+    background-color: linen;
+}
+
+/* Компоненты iframe со встроенным видео */
+.video-container{
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.review-container,.review-button{
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.review-text{
+    display: block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+
+/* Стили панели навигации */
+.navbar p{
+    color: darkgray;
+    padding-left: 15%;
+}
+
+/* Стили панели навигации при наведении мышью */
+.navbar p:hover{
+    color: aliceblue;
+}
+
+/* Глобальные стили для хедеров на всём сайте */
+header{
+    color: black;
+    padding-left: 1%;
+    padding-top: 1.2%;
+}
+/* Стиль хедера для главной страницы имеет приоритет, 
+так как используется селектор по идентификатору */
+#header-index{
+    color: #44453f;
+}
+
+/* Стили футера */
+footer {
+    position: relative;
+    bottom: 0;
+    font-size: medium;
+    color: dimgrey;
+    line-height: 66%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    margin-top: auto;
+}
+
+aside{
+    min-height: 100vh; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
+    width: 10%;
+    min-width: 200px;
+    z-index: 1;
+    position: absolute; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
+    top: 0; /* Сайдбар будет в самой верхней части страницы */
+    left: 0;
+    background-color: #111; /* Черный цвет фона (задан в виде кода) */
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+    padding-top: 2%;
+    font-size: large;
+}
+
+body{
+    padding-left: 250px;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+
+input {
+    border: 2px solid darkgrey;
+    border-radius: 2px;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid dimgrey;
+}
